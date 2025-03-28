@@ -1,0 +1,184 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(250, 237, 220);
+}
+.fa-solid.fa-moon {
+    margin-right: 60px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.navbar-nav .nav-link.active{
+    color:rgb(235, 205, 166);
+    font-weight: bold;
+}
+/* Navbar Links Hover Effect */
+.navbar-nav .nav-link:hover {
+    color:burlywood; /* Bootstrap primary color */
+    font-weight: bold;
+}
+
+/* Hero Section */
+.service-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/service.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Services Section */
+.services-section .card {
+    background-color: white;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.services-section .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.services-section .card i {
+    transition: color 0.3s;
+}
+
+.services-section .card:hover i {
+    color: #dc3545;
+}
+
+/* Call to Action Section */
+.cta-section {
+    background-color: rgb(250, 237, 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.cta-section .cta-box {
+    background-color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    max-width: 700px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cta-section h2 {
+    color: #343a40;
+    margin-bottom: 1rem;
+}
+
+.cta-section .btn {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: rgb(248, 249, 250);
+    color: #6c757d;
+    padding: 3rem 0;
+}
+
+.footer h5 {
+    color: #343a40;
+    font-size: 1.25rem;
+}
+
+.footer ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer ul li i {
+    color: #dc3545;
+    margin-right: 0.5rem;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+.footer hr {
+    border: 0.5px solid #dee2e6;
+}
+
+.footer .text-muted {
+    font-size: 0.9rem;
+}
+/* General Dark Mode Settings */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Navbar Dark Mode */
+body.dark-mode .navbar {
+    background-color: #1e1e1e !important;
+    color: #ffffff;
+}
+
+body.dark-mode .navbar .nav-link {
+    color: #ffffff;
+}
+
+body.dark-mode .navbar .nav-link.active {
+    color: rgb(235, 205, 166);
+}
+/* Navbar Toggle Button Dark Mode */
+body.dark-mode #darkModeToggle {
+    border-color: rgba(255, 255, 255, 0.75);
+}
+
+body.dark-mode .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* Sections Dark Mode */
+body.dark-mode .footer, 
+body.dark-mode .service-hero,
+body.dark-mode .services-section,
+body.dark-mode .cta-section {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+body.dark-mode .cta-box {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+body.dark-mode .cta-box h2{
+    color: #ffffff;
+}
+
+/* Cards Dark Mode */
+body.dark-mode .card {
+    background-color: #333;
+    color: #ffffff;
+}
+
+/* Buttons Dark Mode */
+body.dark-mode .btn-danger {
+    background-color: #bb2d3b;
+    border: none;
+}
+
+body.dark-mode .btn-danger:hover {
+    background-color: #dc3545;
+}
+
+/* Footer Dark Mode */
+body.dark-mode .footer h5,
+body.dark-mode .footer ul li,
+body.dark-mode .footer p {
+    color: #ffffff;
+}
+

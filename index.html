@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="home-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light-subtle sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/Logo.png" alt="Logo" width="100" height="80" style="object-fit: cover;">
+            </a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fade-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fade-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fade-link" href="Services.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fade-link" href="Pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fade-link" href="Gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fade-link" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn btn-outline-dark ms-4" id="darkModeToggle">Toggle Dark Mode</button>
+        </div>
+    </nav>
+    <div class="container-fluid position-relative text-center">
+        <img src="images/home.jpg" alt="hero_banner" id="heroimg" class="img-fluid">
+        <div class="position-absolute top-50 start-50 translate-middle text-center">
+            <div class="para">
+                <p class="p1">YOUR DREAM WEDDING</p>
+                <p class="p2">AS SIMPLE AS PIE</p>
+            </div>
+            <button id="hero-button" class="mt-4"><a href="About.html" style="text-decoration: none;color: white;">See More</a></button>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="about-section" id="about">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="heading mb-5">About Us</h1>
+                    <p class="sub-head fw-bold">Team Of Passionate People</p>
+                    <p>
+                        Welcome to our world, where we turn wedding dreams into reality! We are a team of passionate and
+                        creative professionals dedicated to crafting unforgettable moments tailored to your unique love
+                        story. From intimate ceremonies to grand celebrations, we specialize in designing weddings that
+                        reflect your style, personality, and vision.<br><br>
+                        With a keen eye for detail, a flair for innovation, and years of experience in planning flawless
+                        events, we ensure that every aspect of your special day is seamless and stress-free. Whether
+                        it’s selecting the perfect venue, curating stunning décor, or managing the tiniest details, we are
+                        here to make your journey to "I do" as joyful and memorable as the day itself.<br><br>
+                        Love is at the heart of everything we do. Let us create the wedding of your dreams and a celebration
+                        that will be cherished forever.
+                    </p>
+                    <button id="about-see-more" class="btn btn-danger mt-4"><a href="About.html" style="text-decoration: none;color: white;">See More</a></button>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="images/about.jpg" alt="about-us" class="img-fluid rounded"
+                        style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <!-- Service section -->
+
+    <div class="service-section" id="service">
+        <div class="container py-5 text-center">
+            <h2 class="fw-bold mb-5">OUR SERVICES</h2>
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow rounded-4 p-4 h-100">
+                        <div class="icon text-center mb-3">
+                            <i class="fa-solid fa-camera fa-3x text-danger"></i>
+                        </div>
+                        <h5 class="fw-bold">Full Video And Camera Service</h5>
+                        <p class="text-muted">We provide professional videography and photography services to capture
+                            every special moment of your wedding day. Our experienced team uses high-quality equipment
+                            to ensure stunning visuals and lasting memories. From cinematic films to candid moments, we
+                            create content that tells your love story beautifully.</p>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow rounded-4 p-4 h-100">
+                        <div class="icon text-center mb-3">
+                            <i class="fa-solid fa-palette fa-3x text-danger"></i>
+                        </div>
+                        <h5 class="fw-bold">We Arrange Flowers And Decorations</h5>
+                        <p class="text-muted">Our experts craft stunning floral arrangements and elegant decorations
+                            tailored to your wedding theme. From vibrant bouquets to breathtaking stage setups, we
+                            ensure every detail reflects your unique style, creating a magical ambiance for your big
+                            day.</p>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow rounded-4 p-4 h-100">
+                        <div class="icon text-center mb-3">
+                            <i class="fa-solid fa-location-dot fa-3x text-danger"></i>
+                        </div>
+                        <h5 class="fw-bold">Finding The Right Place For You</h5>
+                        <p class="text-muted">Choosing the perfect venue is crucial, and we’re here to help! Whether you
+                            dream of a grand ballroom or an intimate outdoor setting, we’ll assist you in finding a
+                            location that complements your vision and accommodates all your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Membership Plan Section -->
+    <div class="container-fluid py-5 text-center" id="membership">
+        <h2 class="fw-bold mb-5">MEMBERSHIP PLAN</h2>
+        <div class="row g-5 justify-content-center">
+            <!-- Basic Plan -->
+            <div class="col-md-3">
+                <div class="card border-0 shadow rounded-4 p-4">
+                    <h4 class="fw-bold text-danger">Basic</h4>
+                    <h2 class="fw-bold my-3">$10.99</h2>
+                    <p class="text-muted">Per Month</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa-solid fa-check text-success"></i> Photography</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Consultation</li>
+                        <li><i class="fa-solid fa-x text-danger"></i> Full Assistance</li>
+                        <li><i class="fa-solid fa-x text-danger"></i> Vendor Referrals</li>
+                        <li><i class="fa-solid fa-x text-danger"></i> Find Place</li>
+                    </ul>
+                    <button class="btn btn-danger mt-3">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Standard Plan -->
+            <div class="col-md-3">
+                <div class="card border-0 shadow rounded-4 p-4">
+                    <h4 class="fw-bold text-danger">Standard</h4>
+                    <h2 class="fw-bold my-3">$19.99</h2>
+                    <p class="text-muted">Per Month</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa-solid fa-check text-success"></i> Photography</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Consultation</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Full Assistance</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Vendor Referrals</li>
+                        <li><i class="fa-solid fa-x text-danger"></i> Find Place</li>
+                    </ul>
+                    <button class="btn btn-danger mt-3">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="col-md-3">
+                <div class="card border-0 shadow rounded-4 p-4">
+                    <h4 class="fw-bold text-danger">Premium</h4>
+                    <h2 class="fw-bold my-3">$29.99</h2>
+                    <p class="text-muted">Per Month</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa-solid fa-check text-success"></i> Photography</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Consultation</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Full Assistance</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Vendor Referrals</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Find Place</li>
+                    </ul>
+                    <button class="btn btn-danger mt-3">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+<div class="container-fluid py-5 d-flex justify-content-center align-items-center" id="gallery">
+    <div class="gallery-container">
+        <div class="row">
+            <!-- Left side: Heading and Subheading -->
+            <div class="col-md-6">
+                <div class="text-start mb-5">
+                    <h2 class="gal-head fw-bold">Gallery</h2>
+                    <p class="gal-content" style="font-size: large;">Welcome to our wedding gallery! Each image tells a part of the story of our special day from the intimate moments before the ceremony to the joyous celebrations afterward. Dive into our memories and relive the love, laughter, and the magic that made our day unforgettable.</p>
+                    <button id="gallery-see-more" class="btn btn-danger mt-4"><a href="Gallery.html" style="text-decoration: none;color: white;">See More</a></button>
+                </div>
+            </div>
+            <!-- Right side: Carousel -->
+            <div class="col-md-6">
+                <div id="galleryCarousel" class="carousel slide w-100" data-bs-ride="carousel">
+                    <!-- Indicators -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+    
+                    <!-- Carousel Items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active text-center">
+                            <img src="images/gallery-1.jpg" class="d-block mx-auto carousel-image" alt="Gallery Image 1">
+                            <div class="carousel-caption d-none d-md-block text-dark">
+                                <h5 class="fw-bold text-white">Elegant Wedding Venues</h5>
+                                <p style="color: white;">Discover breathtaking locations for your dream wedding.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="images/gallery-2.jpg" class="d-block mx-auto carousel-image" alt="Gallery Image 2">
+                            <div class="carousel-caption d-none d-md-block text-dark">
+                                <h5 class="fw-bold text-white">Stunning Decorations</h5>
+                                <p style="color: white;">Experience artistic designs tailored to your theme.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="images/gallery-3.webp" class="d-block mx-auto carousel-image" alt="Gallery Image 3">
+                            <div class="carousel-caption d-none d-md-block text-dark">
+                                <h5 class="fw-bold text-white">Unforgettable Moments</h5>
+                                <p style="color: white;">Memories captured with perfection to last a lifetime.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="images/gallery-4.jpeg" class="d-block mx-auto carousel-image" alt="Gallery Image 4">
+                            <div class="carousel-caption d-none d-md-block text-dark">
+                                <h5 class="fw-bold text-white">Pre-Wedding Celebrations</h5>
+                                <p style="color: white;">Our journey began with laughter-filled pre-wedding events</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Contact Form Section -->
+<div class="contact-section" id="contact">
+    <div class="container py-5">
+        <h2 class="text-center fw-bold mb-4">Contact Us</h2>
+        <p class="text-center mb-5">
+            We'd love to hear from you! Please fill out the form below, and our team will get back to you shortly.
+        </p>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container py-5">
+        <div class="row">
+            <!-- About Section -->
+            <div class="col-md-3">
+                <h5 class="fw-bold"><i class="fas fa-user"></i> kt Planners</h5>
+                <p class="text">
+                    We are a team of experienced wedding planners dedicated to creating unforgettable weddings for our clients.
+                </p>
+            </div>
+            <!-- Services Section -->
+            <div class="col-md-3">
+                <h5 class="fw-bold">Our Services</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-angle-right"></i> Full Wedding Planning</li>
+                    <li><i class="fas fa-angle-right"></i> Partial Wedding Planning</li>
+                    <li><i class="fas fa-angle-right"></i> Day-Of Coordination</li>
+                    <li><i class="fas fa-angle-right"></i> Vendor Referrals</li>
+                </ul>
+            </div>
+            <!-- Contact Section -->
+            <div class="col-md-3">
+                <h5 class="fw-bold">Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-phone"></i> 123-595-5555</li>
+                    <li><i class="fas fa-phone"></i> 555-555-5555</li>
+                    <li><i class="fas fa-envelope"></i> info@weddingplanner.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Main St, Anytown USA</li>
+                </ul>
+            </div>
+            <!-- Follow Us Section -->
+            <div class="col-md-3">
+                <h5 class="fw-bold">Follow Us</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fab fa-facebook"></i> Facebook</li>
+                    <li><i class="fab fa-twitter"></i> Twitter</li>
+                    <li><i class="fab fa-instagram"></i> Instagram</li>
+                    <li><i class="fab fa-pinterest"></i> Pinterest</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Copyright Section -->
+        <hr class="my-3">
+        <div class="text-center fw-bold">
+            © Copyright @ 2023 By ktPlanners
+        </div>
+    </div>
+</footer>
+<script src="jquery-3.7.1.js"></script>
+<script>
+    $(document).ready(function() {
+        // Apply saved theme on page load
+        if (localStorage.getItem('dark-mode') === 'enabled') {
+            $('body').addClass('dark-mode');
+            $('#darkModeToggle').text('Toggle Light Mode');
+        }
+
+        // Dark Mode Toggle
+        $("#darkModeToggle").click(function() {
+            $("body").toggleClass("dark-mode");
+            if ($("body").hasClass("dark-mode")) {
+                $(this).text("Toggle Light Mode");
+                localStorage.setItem('dark-mode', 'enabled');
+            } else {
+                $(this).text("Toggle Dark Mode");
+                localStorage.setItem('dark-mode', 'disabled');
+            }
+        });
+
+        // Form Validation
+        $('form').on('submit', function(e) {
+            var isValid = true;
+            $(this).find('input, textarea').each(function() {
+                if ($(this).val() === '') {
+                    isValid = false;
+                    $(this).addClass('is-invalid');
+                } else {
+                    $(this).removeClass('is-invalid');
+                }
+            });
+            if (!isValid) {
+                e.preventDefault();
+                alert('Please fill out all fields.');
+            }
+        });
+
+        // Smooth fading effect for navigation
+        $('.fade-link').on('click', function(e) {
+            e.preventDefault();
+            var newLocation = this.href;
+            $('body').fadeOut(500, function() {
+                window.location = newLocation;
+            });
+        });
+
+        // Fade in the body on load
+        $('body').css('display', 'none');
+        $('body').fadeIn(500);
+    });
+</script>
+</body>
+</html>

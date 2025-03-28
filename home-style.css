@@ -1,0 +1,387 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav .nav-link:hover {
+    color: burlywood;
+    /* Bootstrap primary color */
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(235, 205, 166);
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: burlywood;
+    /* Bootstrap primary color */
+    font-weight: bold;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+#heroimg {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    position: relative;
+}
+
+.about-section {
+    background-color: rgb(250, 237, 220);
+}
+/* Responsive button */
+#about-see-more {
+    width: 50%; /* Make the button full width on small screens */
+    max-width: 100px; /* Optional: restrict the maximum width */
+    margin-bottom: 20px;
+}
+
+/* For large screens */
+@media (min-width: 768px) {
+    #about-see-more {
+        width: auto; /* Make the button size adjust to content */
+    }
+}
+
+#hero-button {
+    padding: 10px 20px;
+    color: rgb(199, 78, 78);
+    border: 1px solid rgb(199, 78, 78);
+    border-radius: 20px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+#hero-button:hover {
+    background-color: rgb(199, 78, 78);
+    color: white;
+}
+
+.para {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .para {
+        font-size: 30px;
+    }
+
+    #hero-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+.fa-solid.fa-moon {
+    margin-right: 60px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.service-section {
+    background-color: rgb(250, 237, 220);
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.icon {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+#membership {
+    background-color: rgb(250, 237, 220);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Outer container with background color and shadow */
+#gallery {
+    background-color: rgb(250, 237, 220);
+    /* Background color */
+    box-shadow: 5px 20px 40px rgba(0, 0, 0, 0.2);
+    /* Shadow for outer container */
+}
+
+/* Inner container with white background */
+.gallery-container {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 90%;
+    /* Slightly smaller than outer container */
+    max-width: 1200px;
+    /* Limit the width */
+    margin: 0 auto;
+}
+
+/* Adjust the carousel */
+.carousel {
+    width: 100%;
+    max-width: 100%;
+    /* Ensure it uses the entire container width */
+}
+
+/* For the images */
+.carousel-image {
+    width: 100%;
+    height: 500px;
+    /* Adjust image height */
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(88%);
+    transition: all 0.3s ease;
+}
+
+/* Left side content: heading and subheading */
+.gal-head {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.gal-content {
+    font-size: large;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .carousel-image {
+        height: 300px;
+        /* Reduce height for smaller screens */
+    }
+
+    .gal-head {
+        font-size: 30px;
+    }
+
+    .gal-content {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-image {
+        height: 250px;
+        /* Further reduce image height for mobile screens */
+    }
+
+    .carousel-caption h5 {
+        font-size: 18px;
+    }
+
+    .carousel-caption p {
+        font-size: 12px;
+    }
+
+    .gal-head {
+        font-size: 24px;
+    }
+
+    .gal-content {
+        font-size: 14px;
+    }
+}
+
+.carousel-caption {
+    bottom: 20%;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        bottom: 15%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        bottom: 10%;
+        font-size: 12px;
+    }
+}
+
+.contact-section {
+    background-color: rgb(238, 232, 223);
+    padding: 3rem 0;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    color: #dc3545;
+}
+
+.contact-section .form-label {
+    font-weight: bold;
+    color: #6c757d;
+}
+
+.contact-section .form-control {
+    border-radius: 0.375rem;
+    border: 1px solid #ced4da;
+}
+
+.contact-section .btn-danger {
+    background-color: #dc3545;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-section .btn-danger:hover {
+    background-color: #bb2d3b;
+}
+
+.footer {
+    background-color: rgb(248, 249, 250);
+    color: #6c757d;
+    padding: 3rem 0;
+}
+
+.footer h5 {
+    color: #343a40;
+    font-size: 1.25rem;
+}
+
+.footer ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer ul li i {
+    color: #dc3545;
+    margin-right: 0.5rem;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+.footer hr {
+    border: 0.5px solid #dee2e6;
+}
+
+.footer .text-muted {
+    font-size: 0.9rem;
+}
+/* General Dark Mode Settings */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Navbar Dark Mode */
+body.dark-mode .navbar {
+    background-color: #1e1e1e !important;
+    color: #ffffff;
+}
+
+body.dark-mode .navbar .nav-link {
+    color: #ffffff;
+}
+
+body.dark-mode .navbar .nav-link.active {
+    color: rgb(235, 205, 166);
+}
+
+/* Navbar Toggle Button Dark Mode */
+body.dark-mode .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.75);
+}
+
+/* Navbar Toggle Button Dark Mode */
+body.dark-mode #darkModeToggle {
+    border-color: rgba(255, 255, 255, 0.75);
+}
+
+body.dark-mode .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Sections Dark Mode */
+body.dark-mode .footer, 
+body.dark-mode .about-section, 
+body.dark-mode .service-section, 
+body.dark-mode .contact-section, 
+body.dark-mode #membership, 
+body.dark-mode #gallery {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+/* Cards Dark Mode */
+body.dark-mode .card {
+    background-color: #333;
+    color: #ffffff;
+}
+
+/* Buttons Dark Mode */
+body.dark-mode .btn-danger {
+    background-color: #bb2d3b;
+    border: none;
+}
+
+body.dark-mode .btn-danger:hover {
+    background-color: #dc3545;
+}
+
+/* Footer Dark Mode */
+body.dark-mode .footer h5,
+body.dark-mode .footer ul li,
+body.dark-mode .footer p {
+    color: #ffffff;
+}
+
+/* Carousel Dark Mode */
+body.dark-mode .gallery-container {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    box-shadow:0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .carousel-item img {
+    filter: brightness(70%);
+}
+
+body.dark-mode .carousel-caption h5,
+body.dark-mode .carousel-caption p {
+    color: #ffffff;
+}
+
+/* Form Control Dark Mode */
+body.dark-mode .form-control {
+    background-color: #333;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #999;
+}
+
+/* Text Dark Mode */
+body.dark-mode .card .text-muted,
+body.dark-mode .fw-bold {
+    color: #ffffff !important;
+}
